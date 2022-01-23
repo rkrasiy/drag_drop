@@ -1,0 +1,22 @@
+{
+  "name": "drag_drop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkrasiy/drag_drop.git"
+  },
+  "author": "Ruslan Krasiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkrasiy/drag_drop/issues"
+  },
+  "homepage": "https://github.com/rkrasiy/drag_drop#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
+}

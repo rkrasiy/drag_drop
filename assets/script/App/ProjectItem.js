@@ -11,7 +11,7 @@ export class ProjectItem {
     this.connectMoreInfoButton();
     this.connectSwithButton(type);
     this.connectDrag();
-  };
+  }
 
 
 
@@ -29,10 +29,10 @@ export class ProjectItem {
     const tooltipText = projectElement.dataset.extraInfo;
     import('./Tooltip.js').then(module => {
       const tooltip = new module.Tooltip(() => {
-        this.hasActiveTooltip = false
+        this.hasActiveTooltip = false;
       },
-        tooltipText,
-        this.id);
+      tooltipText,
+      this.id);
       tooltip.attach();
       this.hasActiveTooltip = true;
     });
@@ -45,7 +45,7 @@ export class ProjectItem {
   connectMoreInfoButton() {
     const projectItemElement = document?.getElementById(this.id);
     const moreInfoBtn = projectItemElement.querySelector('button:first-of-type');
-    moreInfoBtn.addEventListener('click', this.showMoreInfoHandler.bind(this))
+    moreInfoBtn.addEventListener('click', this.showMoreInfoHandler.bind(this));
   }
   connectDrag() {
     const item = document.getElementById(this.id);
@@ -54,7 +54,7 @@ export class ProjectItem {
       event.dataTransfer.effectAllowed = 'move';
     });
     item.addEventListener('dragend', event => {
-      console.log(event)
-    })
+      console.log(event);
+    });
   }
 }

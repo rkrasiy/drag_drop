@@ -10,7 +10,7 @@ export class Tooltip extends Component {
   closeTooltip = () => {
     this.detach();
     this.closeNotifier();
-  }
+  };
 
   render() {
     const tooltipElement = document.createElement('div');
@@ -18,7 +18,7 @@ export class Tooltip extends Component {
     const tooltipTemplate = document.getElementById('tooltip');
     const tooltipBody = document.importNode(tooltipTemplate.content, true);
     tooltipBody.querySelector('p').textContent = this.text;
-    tooltipElement.append(tooltipBody)
+    tooltipElement.append(tooltipBody);
 
     const hostElPosLeft = this.hostElement.offsetLeft;
     const hostElPosTop = this.hostElement.offsetTop;
